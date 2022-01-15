@@ -7,8 +7,11 @@ import model.api.structure.Block;
 import model.api.structure.Structure;
 
 
-public class WallImpl implements Structure {
+public class Wall implements Structure {
 	private List<Block> blocks;
+	
+	
+	
 
 	public Optional<Block> findBlockByColor(String color) {
 		// TODO Auto-generated method stub
