@@ -9,21 +9,43 @@ public class CompositeBlockImpl implements CompositeBlock {
 
 	List<Block> blocks;
 
+	public CompositeBlockImpl(List<Block> blocks) {
+		this.blocks = blocks;
+	}
+
 	public List<Block> getBlocks() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.blocks;
 	}
 
-
+	//returns collor of all blocks
 	public String getColor() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		StringBuffer sb=new StringBuffer();
+		for(Block b: this.blocks ) {
+			sb.append(b.getColor()+", ");			
+		}
+	
+		return sb.toString();
 	}
 
-
+	//returns material of all blocks
 	public String getMaterial() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuffer sb=new StringBuffer();
+		for(Block b: this.blocks ) {
+			sb.append(b.getMaterial()+", ");			
+		}
+	
+		return sb.toString();
 	}
+
+	@Override
+	public String toString() {
+		return "CompositeBlockImpl [blocks=" + blocks + ", getColor()=" + getColor() + ", getMaterial()="
+				+ getMaterial() + "]";
+	}
+	
+	
+	
 
 }
