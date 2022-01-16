@@ -1,11 +1,11 @@
-package model.api.structure;
+package model.wall;
 
 import java.util.List;
 import java.util.Optional;
 
 
 
-public interface Structure {
+ interface Structure {
 	// zwraca dowolny element o podanym kolorze
 	Optional<Block> findBlockByColor(String color);
 

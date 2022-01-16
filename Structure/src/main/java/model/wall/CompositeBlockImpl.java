@@ -1,11 +1,8 @@
-package model.impl.wall;
+package model.wall;
 
 import java.util.List;
 
-import model.api.structure.Block;
-import model.api.structure.CompositeBlock;
-
-public class CompositeBlockImpl implements CompositeBlock {
+ class CompositeBlockImpl implements CompositeBlock {
 
 	List<Block> blocks;
 

@@ -1,13 +1,13 @@
-package model.impl.wall;
+package model.wall;
 
 import java.util.List;
 import java.util.Optional;
 
-import model.api.structure.Block;
-import model.api.structure.Structure;
-
 
 public class Wall implements Structure {
+	
+	
+	
 	private List<Block> blocks;
 	
 	

@@ -1,8 +1,6 @@
-package model.impl.wall;
+package model.wall;
 
-import model.api.structure.Block;
-
-public class BlockImpl implements Block {
+ class BlockImpl implements Block {
 	
 	
 	private String color;
