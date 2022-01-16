@@ -4,18 +4,25 @@ import java.util.List;
 
  class CompositeBlockImpl implements CompositeBlock {
 
-	List<Block> blocks;
+	 
+	private List<Block> blocks;
+	
+
+	public CompositeBlockImpl() {
+		super();
+	}
 
 	public CompositeBlockImpl(List<Block> blocks) {
 		this.blocks = blocks;
 	}
 
+	
 	public List<Block> getBlocks() {
 		
 		return this.blocks;
 	}
 
-	//returns collor of all blocks
+	//returns color of all blocks
 	public String getColor() {
 		
 		StringBuffer sb=new StringBuffer();

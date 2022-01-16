@@ -6,6 +6,10 @@ package model.wall;
 	private String color;
 	private String material;
 
+	
+	public BlockImpl() {
+		super();
+	}
 
 	public BlockImpl(String color, String material) {
 		this.color = color;
