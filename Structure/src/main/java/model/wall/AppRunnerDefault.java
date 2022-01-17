@@ -46,8 +46,8 @@ public class AppRunnerDefault {
 		Wall wall=new Wall(listBlocks);
 		Wall wallOfCompositeBlocks=new Wall(listCompositeBlock);
 		
-		System.out.println(wall);
-		System.out.println(wallOfCompositeBlocks);
+		System.out.println("runner test of wall to string "+wall);
+		System.out.println("runner test of wall of compositblocks to string "+wallOfCompositeBlocks);
 		System.out.println();
 		System.out.println("runner test of wall of block find color blue : " + wall.findBlockByColor("blue"));
 		System.out.println("runner test of wall of block find color black : " + wall.findBlockByColor("black"));
