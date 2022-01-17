@@ -64,12 +64,13 @@ public class AppRunnerDefault {
 		System.out.println("runner test of wall count: " + wall.count() );
 		System.out.println("runner test of Compositewall count: " + wallOfCompositeBlocks.count() );
 		
+		System.out.println();
 		Wall wallEmpty=new Wall(null);
 		
-		System.out.println(wallEmpty);
-		System.out.println(wallEmpty.count());
-		System.out.println(wallEmpty.findBlockByColor("blue"));
-		System.out.println(wallEmpty.findBlocksByMaterial("steel"));
+		System.out.println("runner test empty wall : "+wallEmpty);
+		System.out.println("runner test count on empty wall : "+wallEmpty.count());
+		System.out.println("runner test find color on wall : "+wallEmpty.findBlockByColor("blue"));
+		System.out.println("runner test find color empty wall : "+wallEmpty.findBlocksByMaterial("steel"));
 
 	}
 }
