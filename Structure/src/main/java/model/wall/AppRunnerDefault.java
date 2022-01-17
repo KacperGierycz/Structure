@@ -63,6 +63,13 @@ public class AppRunnerDefault {
 		
 		System.out.println("runner test of wall count: " + wall.count() );
 		System.out.println("runner test of Compositewall count: " + wallOfCompositeBlocks.count() );
+		
+		Wall wallEmpty=new Wall(null);
+		
+		System.out.println(wallEmpty);
+		System.out.println(wallEmpty.count());
+		System.out.println(wallEmpty.findBlockByColor("blue"));
+		System.out.println(wallEmpty.findBlocksByMaterial("steel"));
 
 	}
 }

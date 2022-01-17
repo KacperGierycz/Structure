@@ -1,5 +1,7 @@
 package model.wall;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -14,11 +16,17 @@ public class Wall implements Structure {
 
 	public Wall() {
 		super();
+		this.blocks=Collections.emptyList();
 	}
 
 	public Wall(List<Block> blocks) {
 		super();
+		if(blocks==null) {
+			this.blocks=Collections.emptyList();
+		}
+		else {
 		this.blocks = blocks;
+		}
 	}
 	
 
