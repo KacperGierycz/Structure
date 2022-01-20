@@ -19,6 +19,8 @@ public class WallTest {
 		listOfBlocks.add(block1);
 		listOfBlocks.add(block2);
 		Wall wall=new Wall(listOfBlocks);
+		
+		
 	}
 	
 //	Wall wall=new Wall(block1);
