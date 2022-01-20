@@ -7,6 +7,8 @@ public class AppRunnerDefault {
 
 	public static void main(String[] args) {
 		
+
+	
 		Block redSteel= new BlockImpl("red", "steel");
 		
 		System.out.println("runner test getcolor: "+redSteel.getColor());
@@ -71,7 +73,8 @@ public class AppRunnerDefault {
 		System.out.println("runner test count on empty wall : "+wallEmpty.count());
 		System.out.println("runner test find color on wall : "+wallEmpty.findBlockByColor("blue"));
 		System.out.println("runner test find color empty wall : "+wallEmpty.findBlocksByMaterial("steel"));
-
+		
+		Wall wall3=new Wall();
 	}
 }
 
