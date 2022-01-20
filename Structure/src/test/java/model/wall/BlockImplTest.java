@@ -24,25 +24,33 @@ public class BlockImplTest {
 	}
 	
 	@Test
-	public void Block1GetColorTest() {
+	public void block1GetColorTest() {
 		assertEquals("green",block1.getColor());
 		
 	}
 	
 	@Test
-	public void Block2GetColorTest() {
+	public void block2GetColorTest() {
 		assertEquals("black",block2.getColor());
 	}
 	
 	
 	@Test
-	public void Block1GetMaterialTesy() {
+	public void block1GetMaterialTesy() {
 		assertEquals("wool", block1.getMaterial());
 	}
 	
 	@Test
-	public void Block2GetMaterialTesy() {
+	public void block2GetMaterialTesy() {
 		assertEquals("iron", block2.getMaterial());
+	}
+	
+	@Test
+	public void blockToStringTest() {
+		String ans= "BlockImpl [color=green, material=wool]";
+		
+		assertEquals(ans, block1.toString());
+		
 	}
 	
 	
