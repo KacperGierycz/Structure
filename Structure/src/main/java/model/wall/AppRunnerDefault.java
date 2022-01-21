@@ -109,6 +109,7 @@ public class AppRunnerDefault {
 		List<Block> fin=new ArrayList<>();
 		fin.add(b);
 		fin.addAll(listCompositeB);
+		fin.add(b);
 		
 		Wall wall3=new Wall(fin);
 		
