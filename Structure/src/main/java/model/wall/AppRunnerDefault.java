@@ -74,7 +74,50 @@ public class AppRunnerDefault {
 		System.out.println("runner test find color on wall : "+wallEmpty.findBlockByColor("blue"));
 		System.out.println("runner test find color empty wall : "+wallEmpty.findBlocksByMaterial("steel"));
 		
-		Wall wall3=new Wall();
+		
+		
+		
+		List<Block>listCompositeBlockOfCompositeBlocks=new ArrayList<Block>();
+		listCompositeBlock.add(compositeBlock);
+		listCompositeBlock.add(blueWood);
+		listCompositeBlock.add(compositeBlock);
+	//	lcb.add(b);
+		
+		List<Block> listCompositeB=new ArrayList<>();
+		listCompositeB.add(blueWood);
+		listCompositeB.add(redSteel);
+		
+		Block whiteCloud= new BlockImpl("white", "cloud");
+		
+		List<Block> lastList=new ArrayList<>();
+		lastList.addAll(listCompositeB);
+		lastList.add(whiteCloud);
+
+		Block lastB=new CompositeBlockImpl(lastList);
+		Block inner=new CompositeBlockImpl(listCompositeB);
+		
+		List<Block>firstL=new ArrayList<>();
+		firstL.add(inner);
+		firstL.add(lastB);
+		Block bInner=new CompositeBlockImpl(firstL);
+		List lastL=new ArrayList<>();
+		lastL.add(bInner);
+		lastL.add(inner);
+		
+		Block b=new CompositeBlockImpl(lastL);
+		
+		List<Block> fin=new ArrayList<>();
+		fin.add(b);
+		fin.addAll(listCompositeB);
+		
+		Wall wall3=new Wall(fin);
+		
+		System.out.println("toString on CompositeBloc in CompositeBloc "+wall3);
+		System.out.println("find color that is not there "+wall3.findBlockByColor("pppppp"));
+		System.out.println("find " + wall3.findBlockByColor("white"));
+		System.out.println(wall3.count());
+		System.out.println(wall3.findBlocksByMaterial("cloud"));
+		
 	}
 }
 

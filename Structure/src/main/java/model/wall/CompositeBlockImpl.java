@@ -33,7 +33,7 @@ import java.util.Optional;
 
 	//returns color of all blocks
 	public String getColor() {
-		System.out.print("dd");
+		
 		String colors=blocks.stream()
 				.map(Block::getColor)
 				.reduce((color1, color2)->color1+", "+color2).get();
