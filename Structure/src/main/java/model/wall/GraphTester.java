@@ -40,13 +40,19 @@ public class GraphTester {
 		Block graph=new CompositeBlockImpl(listForGraph);
 		
 		Wall graphWall=new Wall(listForGraph);
-		
-	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("");
+		//type "" if looking for nothing
+		//type wood one in graph
+		//type steel 3 in graph
+	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("steel");
 		System.out.println(blocksWithMaterial);
 		
 		System.out.println(graphWall.countIndIvisibleBlocks());
-		
-		System.out.println(graphWall.findIndivisibleBlockByColor(""));
+		//type "" if looking for nothing
+		//white one
+		// red 3
+		// blue 1
+		// white 1
+		System.out.println(graphWall.findIndivisibleBlockByColor("white"));
 
 	}
 
