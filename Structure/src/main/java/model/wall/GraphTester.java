@@ -43,7 +43,8 @@ public class GraphTester {
 		//type "" if looking for nothing
 		//type wood one in graph
 		//type steel 3 in graph
-	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("steel");
+		//type cloud one in graph
+	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("wood");
 		System.out.println(blocksWithMaterial);
 		
 		System.out.println(graphWall.countIndIvisibleBlocks());
@@ -52,7 +53,8 @@ public class GraphTester {
 		// red 3
 		// blue 1
 		// white 1
-		System.out.println(graphWall.findIndivisibleBlockByColor("white"));
+		//returns only one:))
+		System.out.println(graphWall.findIndivisibleBlockByColor("red"));
 
 	}
 
