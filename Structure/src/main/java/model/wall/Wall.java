@@ -39,6 +39,54 @@ public class Wall implements Structure {
 		
 		return blockByColorOptionalONullableFindAny;
 	}
+	
+	public Optional<Block> findIndivisibleBlockByColor(String color){
+		Optional<Block> op=Optional.ofNullable(null);
+		
+		for(Block b :blocks) {
+			
+			if(b instanceof CompositeBlock) {
+				CompositeBlock bcb=(CompositeBlock) b ;
+				op=findIndivisibleBlockByColor(bcb,color);
+			}
+			else {
+				if(b.getColor().matches(color)) {
+					return Optional.ofNullable(b);
+				}
+			}
+			
+			
+			
+		}
+		
+		
+		return op;
+		
+		
+		
+	}
+	
+	Optional<Block> findIndivisibleBlockByColor(CompositeBlock branch,String color){
+		Optional<Block> op=Optional.ofNullable(null);
+		
+		for(Block b:branch.getBlocks()) {
+			
+			if(b instanceof CompositeBlock) {
+				CompositeBlock bcb=(CompositeBlock) b ;
+				op=findIndivisibleBlockByColor(bcb,color);
+			}
+			else {
+				if(b.getColor().matches(color)) {
+					return Optional.ofNullable(b);
+				}
+			}
+			
+		}
+		
+		return op;
+		
+	}
+	
 
 	
 	public List<Block> findBlocksByMaterial(String material) {

@@ -46,6 +46,7 @@ public class GraphTester {
 		
 		System.out.println(graphWall.countIndIvisibleBlocks());
 		
+		System.out.println(graphWall.findIndivisibleBlockByColor("red"));
 
 	}
 
