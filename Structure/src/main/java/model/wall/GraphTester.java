@@ -41,12 +41,12 @@ public class GraphTester {
 		
 		Wall graphWall=new Wall(listForGraph);
 		
-	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("cloud");
+	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("");
 		System.out.println(blocksWithMaterial);
 		
 		System.out.println(graphWall.countIndIvisibleBlocks());
 		
-		System.out.println(graphWall.findIndivisibleBlockByColor("red"));
+		System.out.println(graphWall.findIndivisibleBlockByColor(""));
 
 	}
 
