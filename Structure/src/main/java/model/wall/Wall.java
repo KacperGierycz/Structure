@@ -58,7 +58,7 @@ public class Wall implements Structure {
 				findIndivisibleBlocksByMaterial( material, bcb, ans);
 			}
 			else {
-				if (b.getMaterial().equals(material)){
+				if (b.getMaterial().matches(material)){
 					ans.add(b);
 				}
 			}
@@ -81,7 +81,7 @@ public class Wall implements Structure {
 				
 			}
 			else {
-				if (b.getMaterial().equals(material)){
+				if (b.getMaterial().matches(material)){
 					ans.add(b);
 				}
 			
@@ -98,6 +98,19 @@ public class Wall implements Structure {
 				.count();
 		return (int) countBlocks;
 	}
+	
+	public int countIndIvisibleBlocks() {
+		String regexUniversal=".+";
+		List<Block> listOfBlocks =findIndivisibleBlocksByMaterial( regexUniversal);
+		
+	
+		
+		return listOfBlocks.size();
+		
+	}
+	
+	
+	
 
 	@Override
 	public String toString() {

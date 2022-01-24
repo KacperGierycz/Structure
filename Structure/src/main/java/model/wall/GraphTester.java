@@ -44,7 +44,7 @@ public class GraphTester {
 	List<Block>blocksWithMaterial=	graphWall.findIndivisibleBlocksByMaterial("cloud");
 		System.out.println(blocksWithMaterial);
 		
-		
+		System.out.println(graphWall.countIndIvisibleBlocks());
 		
 
 	}
