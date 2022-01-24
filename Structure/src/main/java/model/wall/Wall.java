@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 
 public class Wall implements Structure {
-	//is Git on?
+	//is Git on? is it?
 	
 	
 	private List<Block> blocks;
