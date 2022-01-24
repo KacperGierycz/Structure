@@ -47,6 +47,51 @@ public class Wall implements Structure {
 				.collect(Collectors.toList());
 		return listOfBlockFilterByMaterial;
 	}
+	
+	public List<Block> findIndivisibleBlocksByMaterial(String material){
+		
+		List<Block> ans=new ArrayList<>();
+		
+		for(Block b : blocks) {
+			if(b instanceof CompositeBlock) {
+				CompositeBlock bcb=(CompositeBlock) b ;
+				findIndivisibleBlocksByMaterial( material, bcb, ans);
+			}
+			else {
+				if (b.getMaterial().equals(material)){
+					ans.add(b);
+				}
+			}
+		}
+		
+		
+		return ans;
+		
+	}
+	
+	public List<Block> findIndivisibleBlocksByMaterial(String material, CompositeBlock branch,List<Block> ans){
+		
+		List<Block> blocksFromBranch = branch.getBlocks();
+		
+		for(Block b : branch.getBlocks()) {
+			if(b instanceof CompositeBlock) {
+			
+			CompositeBlock bcb=(CompositeBlock) b ;
+				findIndivisibleBlocksByMaterial( material, bcb, ans);
+				
+			}
+			else {
+				if (b.getMaterial().equals(material)){
+					ans.add(b);
+				}
+			
+				
+			}
+		}
+		
+		
+		return ans;
+	}
 
 	public int count() {
 		long countBlocks=blocks.stream()

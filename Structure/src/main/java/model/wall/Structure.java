@@ -11,6 +11,7 @@ import java.util.Optional;
 
 	// zwraca wszystkie elementy z danego materia³u
 	List<Block> findBlocksByMaterial(String material);
+	
 
 	//zwraca liczbê wszystkich elementów tworz¹cych strukturê
 	int count();
