@@ -6,7 +6,9 @@ Job Task for Horus
 This is my imlpementation of Task from Horus company.
 
 Task is given in form of interfaces one implementation(draft) of a class Wall
+
 This exercice is a good way to practice object oriented programing, desigh concepts, but the most how important is information flow and communication.
+
 The most exiting part of a project is a behavior of a method according to how distinguish Blocks from Composite Blocks.
 
 description (Polish)
