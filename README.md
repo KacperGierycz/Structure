@@ -46,12 +46,12 @@ Task is given in form of interfaces of a classes and one implementation(draft) o
   
 ## Structure first:
 
-*Block interface draft for BlockImpl
-*BlockImpl holding values material and color quite straight forward
-*Composite interface draft for CompositeBlockImpl
-*CompositeBlockImpl to holds blocks in list has to implemets Block methods: getColor() return String of color of all blocks, getMaterial() return String of materials of all blocks; all above even if they are inside another CompositeBlock
-*Strcture interface with methods drafts 
-*Wall concret implementation of Structure with various method will discuss them later in detail
+* Block interface draft for BlockImpl
+* BlockImpl holding values material and color quite straight forward
+* Composite interface draft for CompositeBlockImpl
+* CompositeBlockImpl to holds blocks in list has to implemets Block methods: getColor() return String of color of all blocks, getMaterial() return String of materials of all blocks; all above even if they are inside another CompositeBlock
+* Strcture interface with methods drafts 
+* Wall concret implementation of Structure with various method will discuss them later in detail
 
 
   This exercice is a good way to practice object oriented programing, desigh concepts, but the most how important is information flow and communication.
