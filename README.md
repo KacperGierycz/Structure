@@ -11,7 +11,7 @@ This exercice is a good way to practice object oriented programing, desigh conce
 
 The most exiting part of a project is a behavior of a method according to how distinguish Blocks from Composite Blocks.
 
-description (Polish)
+### Description (Polish)
 
 	Poniżej przekazujemy zadanie z prośbą o analizę poniższego kodu i
 	zaimplementowanie metod findBlockByColor, findBlocksByMaterial,
