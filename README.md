@@ -40,7 +40,8 @@ Task is given in form of interfaces of a classes and one implementation(draft) o
 	List<Block> getBlocks();
 	}
   
-  #Implementation
+  # Implementation
+  
   I decided to use a Strategy Patern with dependency injection as a way to distinguish bechavior.
   
   Structure first:
