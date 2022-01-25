@@ -7,20 +7,20 @@ This is my imlpementation of Task from Horus company.
 
 Task is given in form of interfaces of a classes and one implementation(draft) of a class Wall
 
-//	Poniżej przekazujemy zadanie z prośbą o analizę poniższego kodu i
-//	zaimplementowanie metod findBlockByColor, findBlocksByMaterial,
-//	count w klasie Wall - najchętniej unikając powielania kodu i
-//	umieszczając całą logikę w klasie Wall. Z uwzględnieniem w analizie i
-//	implementacji interfejsu CompositeBlock!
+	Poniżej przekazujemy zadanie z prośbą o analizę poniższego kodu i
+	zaimplementowanie metod findBlockByColor, findBlocksByMaterial,
+	count w klasie Wall - najchętniej unikając powielania kodu i
+	umieszczając całą logikę w klasie Wall. Z uwzględnieniem w analizie i
+	implementacji interfejsu CompositeBlock!
 
 interface Structure {
-	// zwraca dowolny element o podanym kolorze
+	 zwraca dowolny element o podanym kolorze
 	Optional<Block> findBlockByColor(String color);
 
-	// zwraca wszystkie elementy z danego materiału
+	 zwraca wszystkie elementy z danego materiału
 	List<Block> findBlocksByMaterial(String material);
 
-	//zwraca liczbę wszystkich elementów tworzących strukturę
+	zwraca liczbę wszystkich elementów tworzących strukturę
 	int count();
 	}
 
