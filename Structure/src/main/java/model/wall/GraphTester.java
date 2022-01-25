@@ -6,7 +6,7 @@ import java.util.List;
 public class GraphTester {
 
 	public static void main(String[] args) {
-
+//
 		Block redSteel= new BlockImpl("red", "steel");		
 		Block blueWood= new BlockImpl("blue", "wood");
 		Block whiteCloud= new BlockImpl("white", "cloud");
